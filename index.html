@@ -2,17 +2,23 @@
 name: Santiago González Mota
 layout: default
 ---
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="home">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <h1>Últimos Posts</h1>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
+  {% for post in site.posts limit:5 %}
+    <div class="post">
+      <h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+      {{ post.content }}
+    </div>
   {% endfor %}
+
+  <h2>Posts Anteriores</h2>
+  <ul>
+    {% for post in site.posts offset:5 %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - <span class="date">{{ post.date | date: "%b %d, %Y" }}</span></li>
+    {% endfor %}
+  </ul>
+
 </div>
