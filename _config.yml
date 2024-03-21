@@ -2,3 +2,5 @@ name: Santiago González Mota
 title: Santiago González Mota
 description: Welcome to my blog!
 theme: jekyll-theme-dinky
+github:
+  is_project_page: false
