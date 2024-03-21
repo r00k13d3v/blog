@@ -1,4 +1,11 @@
 ---
-title: "Welcome to my blog"
-date: 2019-01-20
+layout: default
+title: Another page
+description: This is just another page
 ---
+
+## Welcome to another page
+
+_yay_
+
+[back](./)
