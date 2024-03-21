@@ -2,6 +2,9 @@ name: Santiago González Mota
 title: Santiago González Mota
 description: Welcome to my blog!
 theme: jekyll-theme-dinky
+footer-links:
+  github: r00k13d3v
+  linkedin: santiago-gonzalez-mota
 github:
   is_project_page: false
 plugins:
