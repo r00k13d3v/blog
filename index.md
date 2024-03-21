@@ -2,8 +2,8 @@
 title: Santiago González Mota
 layout: default
 ---
-{% for post in site.posts limit:5 %}
-   <article>
-      {% include article.html %}
-    </article>
-{% end %}
+<div class="blog-index">  
+  {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  {% include post_detail.html %}
+</div>
