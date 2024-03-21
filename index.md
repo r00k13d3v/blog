@@ -1,5 +1,6 @@
 ---
 title: Santiago González Mota
+layout: default
 ---
 {% for post in site.posts limit:5 %}
    <article>
