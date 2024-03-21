@@ -8,4 +8,4 @@ description: This is just another page
 
 _yay_
 
-[back](./)
+<a href="javascript:history.back()">Volver Atrás</a>
