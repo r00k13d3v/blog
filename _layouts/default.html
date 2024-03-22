@@ -68,8 +68,14 @@
                 </a>
                 <!-- Agrega más iconos aquí si lo deseas -->
             </div>
-    </div>
-    </footer>
+            {% if page.mostrar_boton_atras %}
+            <div style="position: fixed; bottom: 20px; right: 20px;">
+                <a href="javascript:history.back()" style="text-decoration: none;">
+                    <i class="fa-solid fa-turn-down-left fa-2xl" style="color: #ac2a2a;"></i>
+                </a>
+            </div>
+            {% endif %}
+        </footer>
     </div>
 </body>
 
