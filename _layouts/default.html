@@ -2,6 +2,50 @@
 <html lang="{{ site.lang | default: " en-US" }}">
 
 <head>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            position: relative;
+            padding-bottom: 60px;
+            /* Ajusta esto según la altura de tu footer */
+        }
+
+        footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            /* Cambia esto según tu esquema de colores */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+            /* Opcional: añade sombra para un efecto elevado */
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+            /* Asegúrate de que hay espacio en el lado izquierdo */
+        }
+
+        .share-this {
+            margin-right: 20px;
+            /* Espacio en el lado derecho */
+        }
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,30 +75,30 @@
 
         <footer style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
             <div>
-              <h3 style="margin-bottom: 10px;">Conéctate conmigo</h3>
-              <div class="social-icons" style="display: flex; gap: 10px;">
-                <a href="https://www.linkedin.com/in/santiago-gonzalez-mota" target="_blank">
-                  <i class="fa-brands fa-linkedin fa-2xl" style="color: #0e76a8;"></i>
-                </a>
-                <!-- Agrega más iconos aquí si lo deseas -->
-              </div>
+                <h3 style="margin-bottom: 10px;">Conéctate conmigo</h3>
+                <div class="social-icons" style="display: flex; gap: 10px;">
+                    <a href="https://www.linkedin.com/in/santiago-gonzalez-mota" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-2xl" style="color: #0e76a8;"></i>
+                    </a>
+                    <!-- Agrega más iconos aquí si lo deseas -->
+                </div>
             </div>
-          
+
             <div class="share-this">
-              <h3>Comparte este post</h3>
-              <!-- AddThis Button BEGIN -->
-              <div class="addthis_toolbox addthis_default_style">
-                <a class="addthis_button_preferred_1"></a>
-                <a class="addthis_button_preferred_2"></a>
-                <a class="addthis_button_preferred_3"></a>
-                <a class="addthis_button_preferred_4"></a>
-                <a class="addthis_button_compact"></a>
-                <a class="addthis_counter addthis_bubble_style"></a>
-              </div>
-              <!-- AddThis Button END -->
+                <h3>Comparte este post</h3>
+                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style">
+                    <a class="addthis_button_preferred_1"></a>
+                    <a class="addthis_button_preferred_2"></a>
+                    <a class="addthis_button_preferred_3"></a>
+                    <a class="addthis_button_preferred_4"></a>
+                    <a class="addthis_button_compact"></a>
+                    <a class="addthis_counter addthis_bubble_style"></a>
+                </div>
+                <!-- AddThis Button END -->
             </div>
-          </footer>
-          
+        </footer>
+
     </div>
     <script>fixScale(document);</script>
 </body>
