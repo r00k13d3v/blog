@@ -6,10 +6,9 @@
         footer {
             position: fixed;
             left: 0;
-            bottom: 0;
+            bottom: 0 !important;
             width: 100% !important;
-            background-color: #333;
-            /* Cambia esto según tu esquema de colores */
+            height: 20px;
             color: white;
             text-align: center;
             padding: 20px 0;
@@ -20,13 +19,17 @@
             /* Opcional: añade sombra para un efecto elevado */
         }
 
+        .footer-container{
+            width: 100% !important;
+            background-color: #333;
+        }
+
         .social-icons {
             display: flex;
             gap: 10px;
             margin-left: 20px;
             /* Asegúrate de que hay espacio en el lado izquierdo */
         }
-
     </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -56,7 +59,7 @@
         </section>
 
         <footer>
-            <div>
+            <div class="footer-container"
                 <div class="social-icons" style="display: flex; gap: 10px;">
                     <a href="https://www.linkedin.com/in/santiago-gonzalez-mota" target="_blank">
                         <i class="fa-brands fa-linkedin fa-2xl" style="color: #0e76a8;"></i>
