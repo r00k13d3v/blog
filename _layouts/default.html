@@ -19,7 +19,7 @@
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
             /* Opcional: añade sombra para un efecto elevado */
         }
-        
+
         .social-icons {
             display: flex;
             gap: 10px;
@@ -53,6 +53,13 @@
         <section>
             {{ content }}
         </section>
+        {% if page.mostrar_boton_atras %}
+        <div style="position: fixed; bottom: 20px; right: 20px;">
+            <a href="javascript:history.back()" style="text-decoration: none;">
+                <i class="fa-solid fa-turn-down-left fa-2xl" style="color: #ac2a2a;"></i>
+            </a>
+        </div>
+        {% endif %}
 
         <footer>
             <div class="footer-container" <div class="social-icons" style="display: flex; gap: 10px;">
