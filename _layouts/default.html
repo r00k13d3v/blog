@@ -1,34 +1,43 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: " en-US" }}">
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
-  {% seo %}
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-  <script src="{{ '/assets/js/scale.fix.js' | relative_url }}" defer></script>
-  {% include head-custom.html %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-1234567890"></script>
+
+
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}" defer></script>
+    {% include head-custom.html %}
 </head>
+
 <body>
-  <div class="wrapper">
-    <header>
-      <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
-      <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
-    </header>
+    <div class="wrapper">
+        <header>
+            <h1 class="header">{{ site.title | default: site.github.repository_name }}</h1>
+            <p class="header">{{ site.description | default: site.github.project_tagline }}</p>
+        </header>
 
-    <section>
-      {{ content }}
-    </section>
+        <section>
+            {{ content }}
+        </section>
 
-    <footer>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/santiago-gonzalez-mota" target="_blank">
-          <i class="fa-brands fa-linkedin fa-2xl" style="color: #0e76a8;"></i>
-        </a>
-      </div>
-    </footer>
-  </div>
-  <script>fixScale(document);</script>
+        <footer>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/santiago-gonzalez-mota" target="_blank">
+                    <i class="fa-brands fa-linkedin fa-2xl" style="color: #0e76a8;"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>fixScale(document);</script>
 </body>
+
 </html>
