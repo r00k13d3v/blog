@@ -1,7 +1,6 @@
 ---
 layout: default
-title: "Iniciando con SAP CAP: Integrando Event Mesh en tus Proyectos"
-date: 2024-03-26
+title: Iniciando con SAP CAP - Integrando Event Mesh en tus Proyectos
 mostrar_boton_atras: true
 ---
 
